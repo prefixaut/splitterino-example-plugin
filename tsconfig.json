@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+      "target": "es2017",
+      "module": "CommonJS",
+      "strict": false,
+      "jsx": "preserve",
+      "outDir": "dist",
+      "resolveJsonModule": true,
+      "importHelpers": true,
+      "moduleResolution": "node",
+      "experimentalDecorators": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "sourceMap": true,
+      "baseUrl": ".",
+      "types": ["node", "splitterino"],
+      "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "tests/**/*.ts", "tests/**/*.tsx"],
+  "exclude": ["node_modules"]
+}

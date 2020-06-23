@@ -1,0 +1,25 @@
+{
+  "name": "splitterino-example-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "An example plugin on how to create a custom Splitterino plugin",
+  "main": "src/index.ts",
+  "repository": "https://github.com/prefixaut/splitterino-example-plugin",
+  "author": {
+    "name": "PreFiXAUT",
+    "email": "mail@prefix.moe",
+    "url": "https://github.com/prefixaut"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^12",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "splitterino": "./../splitterino/dist_package"
+  }
+}
