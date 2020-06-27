@@ -3,23 +3,58 @@
   "version": "0.1.0",
   "private": true,
   "description": "An example plugin on how to create a custom Splitterino plugin",
-  "main": "src/index.ts",
-  "repository": "https://github.com/prefixaut/splitterino-example-plugin",
   "author": {
     "name": "PreFiXAUT",
     "email": "mail@prefix.moe",
     "url": "https://github.com/prefixaut"
   },
-  "license": "MIT",
   "scripts": {
-    "build": "parcel build src/index.ts"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "bundle": "vue-cli-service bundle --plugin"
+  },
+  "main": "src/index.ts",
+  "bugs": {
+    "url": "https://github.com/prefixaut/splitterino-example-plugin/issues"
+  },
+  "homepage": "https://github.com/prefixaut/splitterino-example-plugin#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:prefixaut/splitterino-example-plugin.git"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "splitterino": "../splitterino/dist_package/",
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.3",
+    "vue-cli-plugin-splitterino": "../vue-cli-plugin-splitterino/",
+    "vue-property-decorator": "^8.4.2"
   },
   "devDependencies": {
     "@types/node": "^12",
+    "@types/tar-fs": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-plugin-eslint": "~4.4.0",
+    "@vue/cli-plugin-typescript": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-vue": "^6.2.2",
+    "gunzip-maybe": "^1.4.2",
     "parcel-bundler": "^1.12.4",
-    "typescript": "^3.9.5"
+    "prettier": "^1.19.1",
+    "splitterino": "^0.3.0",
+    "tar-fs": "^2.1.0",
+    "typescript": "^3.9.5",
+    "vue-template-compiler": "^2.6.11"
   },
-  "dependencies": {
-    "splitterino": "./../splitterino/dist_package"
+  "splitterino": {
+    "compatibleVersion": ">=0.3.0"
   }
 }
