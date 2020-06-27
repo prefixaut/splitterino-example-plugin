@@ -1,6 +1,7 @@
 # Build files
 dist
 .cache
+*.splplg
 
 # System files
 .DS_Store
